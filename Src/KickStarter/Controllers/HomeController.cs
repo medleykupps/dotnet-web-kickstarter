@@ -8,6 +8,13 @@ namespace KickStarter.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IDummyService _dummyService;
+
+        public HomeController(IDummyService dummyService)
+        {
+            _dummyService = dummyService;
+        }
+
         public IActionResult Index()
         {
             return View();
