@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KickStarter", "KickStarter\KickStarter.csproj", "{405A0C77-ABBF-4173-A589-340E6237874E}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "KickStarter", "KickStarter\KickStarter.xproj", "{405A0C77-ABBF-4173-A589-340E6237874E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,8 +18,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {58C1D16A-53B8-47E2-9D12-B8A1035686AA}
 	EndGlobalSection
 EndGlobal
