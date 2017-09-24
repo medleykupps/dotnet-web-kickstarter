@@ -42,6 +42,12 @@ Function RenameProjectContent
 
 }
 
+Get-ChildItem "$root" -recurse -Include *.cs, *.cshtml, *.config, *.sln, *.csproj `
+    | ?{ -not $_.PSIsContainer } `
+    | Select-String -pattern "KickStarter" `
+    | Select-Object -unique path `
+    | ForEach { @{Path = $_.Path;Content = (Get-Content($_.Path)) -replace "KickStarter", "$projectName";} `
+    | % {Set-Content $_.Path $_.Content } }
 
 Write-Progress -Activity "Renaming all project files..."
 
