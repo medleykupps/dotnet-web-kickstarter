@@ -6,7 +6,7 @@ Param (
 
 Write-Progress -Activity "Renaming all project files..."  
 
-$root = "C:\git\Personal\kickstarters\dotnet-web-kickstarter\Src\"
+$root = "C:\git\Personal\Altius-v3\Altius\Src\"
 
 # Rename folders and files from KickStarter to $projectName
 Get-ChildItem -path "$root*" -Recurse -Filter *KickStarter* | Rename-Item -NewName {$_.name -Replace 'KickStarter', $projectName}
@@ -26,7 +26,7 @@ Get-ChildItem "$root" -recurse -Include *.cs, *.cshtml `
     | ForEach { @{Path = $_.Path;Content = (Get-Content($_.Path)) -replace "using KickStarter", "using $projectName";} `
     | % {Set-Content $_.Path $_.Content } }
 
-Get-ChildItem "$root" -recurse -Include *.cs, *.cshtml `
+Get-ChildItem "$root" -recurse -Include *.cs, *.cshtml, *.config, *.sln, *.csproj `
     | ?{ -not $_.PSIsContainer } `
     | Select-String -pattern "KickStarter" `
     | Select-Object -unique path `
