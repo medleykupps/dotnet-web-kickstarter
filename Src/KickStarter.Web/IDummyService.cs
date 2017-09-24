@@ -1,4 +1,4 @@
-﻿namespace KickStarter
+﻿namespace KickStarter.Web
 {
     public interface IDummyService
     {

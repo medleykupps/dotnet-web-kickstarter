@@ -1,7 +1,7 @@
 ﻿using System;
 using AutoMapper;
 
-namespace KickStarter
+namespace KickStarter.Web
 {
     public class MappingProfile : Profile
     {

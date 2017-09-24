@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <PreserveCompilationContext>true</PreserveCompilationContext>
-    <AssemblyName>KickStarter</AssemblyName>
+    <AssemblyName>KickStarter.Web</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>KickStarter</PackageId>
   </PropertyGroup>
