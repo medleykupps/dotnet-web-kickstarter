@@ -10,9 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using AutoMapper;
-using KickStarter.Ioc;
+using KickStarter.Web.Ioc;
 
-namespace KickStarter
+namespace KickStarter.Web
 {
     public class Startup
     {

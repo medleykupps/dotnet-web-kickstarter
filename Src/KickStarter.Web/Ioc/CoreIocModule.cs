@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
 
-namespace KickStarter.Ioc
+namespace KickStarter.Web.Ioc
 {
     public class CoreIocModule : Module
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KickStarter.Controllers
+namespace KickStarter.Web.Controllers
 {
     public class HomeController : Controller
     {
